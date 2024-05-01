@@ -78,7 +78,7 @@ function Sidebar({ isSideBarOpen, setIsSideBarOpen }) {
                   </div>
                 </div>
 
-                <div className=" mx-2  p-4 relative space-x-2 bg-slate-100 dark:bg-[#20212c] flex justify-center items-center rounded-lg">
+               {/*< className=" mx-2  p-4 relative space-x-2 bg-slate-100 dark:bg-[#20212c] flex justify-center items-center rounded-lg">
                   <img src={lightIcon} alt="sun indicating light mode" />
 
                   <Switch
@@ -95,8 +95,8 @@ function Sidebar({ isSideBarOpen, setIsSideBarOpen }) {
                     />
                   </Switch>
 
-                  <img src={darkIcon} alt="moon indicating dark mode" />
-                </div>
+                  {/*<img src={darkIcon} alt="moon indicating dark mode" />*/}
+                
               </div>
             </div>
           )}

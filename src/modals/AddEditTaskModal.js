@@ -203,25 +203,25 @@ function AddEditTaskModal({
           </button>
         </div>
         {/*assigning  */}
-        <div className="mt-8 flex flex-col space-y-3">
-          <label className="text-sm dark:text-white text-gray-500" htmlFor="users">Assign to : </label>
-          <select id="users" value={selectedUser} onChange={(e)=>setSelectedUser(e.target.value)}>
-            <option value="">Select</option>
+        <div className="mt-8 flex flex-col space-y-3 ">
+          <label className="text-sm text-white " htmlFor="users">Assign to : </label>
+          <select className="flex-grow px-4 py-2 rounded-md text-sm bg-black focus:border-0  border-[1px] border-gray-300 focus:outline-[#635fc7] outline-none" id="users" value={selectedUser} onChange={(e)=>setSelectedUser(e.target.value)}>
+            <option className="text-white bg-black" value="">Select</option>
             {users.map((user)=>(
-              <option key={user.name} value={user.name}>{user.name}</option>
+              <option className="bg-black text-white"key={user.name} value={user.name} className="text-white-500">{user.name}</option>
             ))}
           </select>
         </div>
 
         {/* current Status  */}
         <div className="mt-8 flex flex-col space-y-3">
-          <label className="  text-sm dark:text-white text-gray-500">
+          <label className="  text-sm  text-white">
             Current Status
           </label>
           <select
             value={status}
             onChange={onChangeStatus}
-            className=" select-status flex-grow px-4 py-2 rounded-md text-sm bg-transparent focus:border-0  border-[1px] border-gray-300 focus:outline-[#635fc7] outline-none"
+            className=" select-status flex-grow px-4 py-2 rounded-md text-sm bg-black focus:border-0  border-[1px] border-gray-300 focus:outline-[#635fc7] outline-none"
           >
             {columns.map((column, index) => (
               <option key={index}>{column.name}</option>

@@ -127,7 +127,7 @@ function TaskModal({ taskIndex, colIndex, setIsTaskModalOpen }) {
             Current Status
           </label>
           <select
-            className=" select-status flex-grow px-4 py-2 rounded-md text-sm bg-transparent focus:border-0  border-[1px] border-gray-300 focus:outline-[#635fc7] outline-none"
+            className=" select-status flex-grow px-4 py-2 rounded-md text-sm bg-black focus:border-0  border-[1px] border-gray-300 focus:outline-[#635fc7] outline-none"
             value={status}
             onChange={onChange}
           >
